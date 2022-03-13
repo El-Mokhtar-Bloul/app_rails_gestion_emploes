@@ -1,0 +1,16 @@
+<h1>Situation de l'employe</h1>
+
+<p style="color: green"><%= notice %></p>
+
+<%= render @employess %>
+
+
+<div>
+  <%= link_to "Modifier", edit_employess_path(@employess) %> |
+  <%= link_to "retour ", employesses_path %><br>
+
+<p>
+  <%= button_to "Supprimer cet employe", @employess, method: :delete %>
+  </p>
+  <br>
+</div>
